@@ -263,7 +263,7 @@ img {
 .fv .swiper-pagination-bullet {
   width: 60px;
   height: 2px;
-  background: #efede6;
+  background: #EFEDE6;
   margin: 0 30px !important;
   border-radius: 0;
   display: inline-block;
@@ -274,5 +274,107 @@ img {
 
 .fv-img {
   width: 100%;
+}
+
+.top-pick {
+  padding: 121px 0 202px;
+  width: 90%;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+.top-pick-inner {
+  padding: 0 40px;
+}
+
+.section-title {
+  color: #786552;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.section-sub-title {
+  color: #786552;
+  text-align: center;
+  font-family: "Noto Serif JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin: 2px auto 18px;
+  width: fit-content;
+}
+
+.section-border-top {
+  height: 3px;
+  width: 100%;
+  background: #EFEDE6;
+  margin-bottom: 11px;
+}
+
+.section-border-btm {
+  height: 5px;
+  background: #EFEDE6;
+  max-width: 500px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.top-pick-contents {
+  display: grid;
+  grid-template-columns: 284px 284px 284px;
+  column-gap: 32px;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.top-pick-item img {
+  width: 100%;
+  height: auto;
+}
+
+.top-pick-item-text {
+  border-left: 3px solid #EFEDE6;
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
+.pickup-tag {
+  color: #786552;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.pickup-title {
+  margin: 9px 0 10px;
+  color: #786552;
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.pickup-sub {
+  color: #786552;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
 }
 /*# sourceMappingURL=style.css.map */

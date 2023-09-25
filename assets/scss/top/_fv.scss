@@ -11,8 +11,8 @@
   .swiper-pagination-bullet {
     width: 60px;
     height: 2px;
-    background: #efede6;
-    margin: 0 30px!important;
+    background: $color-bg-sakuma;
+    margin: 0 30px !important;
     border-radius: 0;
     display: inline-block;
   }
@@ -20,7 +20,101 @@
     background: $color-text;
   }
 }
-
 .fv-img {
   width: 100%;
+}
+
+.top-pick {
+  padding: 121px 0 202px;
+  width: 90%;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+.top-pick-inner {
+  padding: 0 40px;
+}
+.section-title {
+  color: $color-text;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: $family-noto-sans-jp;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.section-sub-title {
+  color: $color-text;
+  text-align: center;
+  font-family: $family-noto-serif-jp;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin: 2px auto 18px;
+  width: fit-content;
+}
+.section-border-top {
+  height: 3px;
+  width: 100%;
+  background: $color-bg-sakuma;
+  margin-bottom: 11px;
+}
+.section-border-btm {
+  height: 5px;
+  background: $color-bg-sakuma;
+  max-width: 500px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+// pickup
+.top-pick-contents {
+  display: grid;
+  grid-template-columns: 284px 284px 284px;
+  column-gap: 32px;
+  justify-content: center;
+  margin-top: 64px;
+}
+.top-pick-item {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.top-pick-item-text {
+  border-left: 3px solid $color-bg-sakuma;
+  margin-top: 16px;
+  padding-left: 16px;
+}
+.pickup-tag {
+  color: $color-text;
+  font-family: $family-noto-sans-jp;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.pickup-title {
+  margin: 9px 0 10px;
+  color: $color-text;
+  font-family: $family-noto-serif-jp;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.pickup-sub {
+  color: $color-text;
+  font-family: $family-noto-sans-jp;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
 }

@@ -21,3 +21,6 @@ function my_admin_theme_style() {
 }
 
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
+
+//アイキャッチ画像を有効化//
+add_theme_support('post-thumbnails');
