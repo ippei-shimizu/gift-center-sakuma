@@ -45,6 +45,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .header-inner {
@@ -253,8 +254,14 @@ img {
 
 .fv {
   padding-top: 162px;
-  height: 100vh;
-  max-height: 900px;
+}
+.fv .fv-inner {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.fv .swiper-container {
+  padding-bottom: 60px;
 }
 .fv .swiper-pagination {
   position: relative;
@@ -376,5 +383,108 @@ img {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.2px;
+}
+
+.top-catalog {
+  background-color: #eee;
+  padding: 88px 106px;
+}
+
+.top-catalog-inner {
+  width: 90%;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+.top-catalog-contents {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 43px;
+  padding: 0 40px;
+  margin-top: 64px;
+}
+
+.top-catalog-item img {
+  width: 100%;
+}
+
+.top-catalog-border {
+  width: 1px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.top-category-contents img {
+  width: 100%;
+}
+
+.top-category {
+  padding: 200px 0 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-category-inner {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.top-category-contents {
+  margin-top: 69px;
+}
+.top-category-contents .swiper-button-next::after {
+  display: none;
+}
+.top-category-contents .swiper-button-next::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  display: block;
+  background-image: url(../assets/images/next.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 40px;
+  top: -16px;
+  z-index: 5;
+}
+.top-category-contents .swiper-button-prev::after {
+  display: none;
+}
+.top-category-contents .swiper-button-prev::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  display: block;
+  background-image: url(../assets/images/prev.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 40px;
+  top: -16px;
+  z-index: 5;
+}
+
+.top-category-link {
+  min-width: 212px;
+  width: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #786552;
+  margin: 70px auto 0;
+}
+.top-category-link a {
+  color: #786552;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  padding: 9px;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

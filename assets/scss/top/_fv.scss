@@ -2,8 +2,14 @@
 
 .fv {
   padding-top: 162px;
-  height: 100vh;
-  max-height: 900px;
+  .fv-inner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-container {
+    padding-bottom: 60px;
+  }
   .swiper-pagination {
     position: relative;
     top: 43px;
@@ -117,4 +123,109 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.2px;
+}
+
+// catalog gift
+.top-catalog {
+  background-color: #eee;
+  padding: 88px 106px;
+}
+.top-catalog-inner {
+  width: 90%;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+.top-catalog-contents {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 43px;
+  padding: 0 40px;
+  margin-top: 64px;
+}
+.top-catalog-item {
+  img {
+    width: 100%;
+  }
+}
+.top-catalog-border {
+  width: 1px;
+  background-color: #fff;
+  height: 100%;
+}
+.top-category-contents {
+  img {
+    width: 100%;
+  }
+}
+
+// category
+.top-category {
+  padding: 200px 0 250px;
+  position: relative;
+  overflow: hidden;
+}
+.top-category-inner {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.top-category-contents {
+  margin-top: 69px;
+  .swiper-button-next {
+    &::after {
+      display: none;
+    }
+    &::before {
+      content: "";
+      width: 10px;
+      height: 20px;
+      display: block;
+      background-image: url(../assets/images/next.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 40px;
+      top: -16px;
+      z-index: 5;
+    }
+  }
+  .swiper-button-prev {
+    &::after {
+      display: none;
+    }
+    &::before {
+      content: "";
+      width: 10px;
+      height: 20px;
+      display: block;
+      background-image: url(../assets/images/prev.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 40px;
+      top: -16px;
+      z-index: 5;
+    }
+  }
+}
+.top-category-link {
+  min-width: 212px;
+  width: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-text;
+  margin: 70px auto 0;
+  a {
+    color: $color-text;
+    text-align: center;
+    font-family: $family-noto-sans-jp;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    padding: 9px ;
+    display: block;
+  }
 }
