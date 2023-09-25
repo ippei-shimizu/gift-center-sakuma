@@ -225,7 +225,110 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.2px;
-    padding: 9px ;
+    padding: 9px;
     display: block;
   }
+}
+
+// what new
+.top-what {
+}
+.top-what-inner {
+  width: 90%;
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 128px 0 162px;
+  border-top: 5px solid #efede6;
+  border-bottom: 5px solid #efede6;
+}
+.top-what-contents {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  column-gap: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+.top-what-title-box {
+  h2 {
+    color: $color-text;
+    font-family: $family-noto-sans-jp;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: $color-text;
+    width: fit-content;
+    text-align: center;
+    font-family: $family-noto-sans-jp;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 68px;
+  }
+  a {
+    display: block;
+    text-align: center;
+    width: 134.743px;
+    line-height: 36px;
+    color: $color-text;
+    text-align: center;
+    font-family: $family-noto-sans-jp;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    border: 1px solid #786552;
+  }
+}
+.top-what-list {
+}
+.top-what-item {
+  &:last-child {
+    a {
+      border-bottom: 1px solid $color-text;
+    }
+  }
+  a {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr 12px;
+    align-items: center;
+    border-top: 1px solid $color-text;
+    span {
+      color: $color-text;
+      font-family: $family-noto-serif-jp;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1px;
+    }
+  }
+}
+.top-what-date {
+  color: $color-text;
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-right: 57px;
+}
+.top-what-title {
+  color: $color-text;
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
 }

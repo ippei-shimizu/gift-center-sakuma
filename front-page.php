@@ -131,6 +131,42 @@ wp_reset_postdata();
   </div>
 </div>
 
+<!-- what new -->
+<div class="top-what">
+  <div class="top-what-inner">
+    <div class="top-what-contents">
+      <div class="top-what-title-box">
+        <h2>WHAT'S NEW</h2>
+        <h3>おしらせ</h3>
+        <a href="">VIEW MORE</a>
+      </div>
+      <div class="top-what-list">
+<?php
+$info_args = array(
+  'posts_per_page' => 3,
+  'category_name'  => 'information',
+  'orderby'        => 'date',
+  'order'          => 'DESC',
+);
+$info_posts = new WP_Query($info_args);
+if ($info_posts->have_posts()) : while ($info_posts->have_posts()) : $info_posts->the_post();
+?>
+<div class="top-what-item">
+<a href="<?php the_permalink(); ?>">
+  <p class="top-what-date"><?php echo get_the_date('Y.m.j'); ?></p>
+  <p class="top-what-title"><?php the_title(); ?></p>
+  <span>▶︎</span>
+</a>
+</div>
+<?php
+endwhile; endif;
+wp_reset_postdata(); 
+?>
+</div>
+    </div>
+  </div>
+</div>
+
 
 
 <?php get_footer(); ?>
