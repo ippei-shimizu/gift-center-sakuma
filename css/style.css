@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Noto Serif JP", sans-serif;
 }
 
 h1,
@@ -50,7 +50,7 @@ img {
 .header-inner {
   padding: 41px 60px 19px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr 60px;
   align-items: center;
   justify-content: space-between;
 }
@@ -83,8 +83,15 @@ img {
   cursor: pointer;
   transform: rotate(90deg);
   transition: transform 0.25s;
+  position: fixed;
+  top: 42px;
+  right: 60px;
+  z-index: 999;
 }
 .nav-btn:hover {
+  transform: rotate(0);
+}
+.nav-btn.openRotate {
   transform: rotate(0);
 }
 
@@ -92,6 +99,19 @@ img {
   width: 40px;
   height: 40px;
   border: 2px solid #786552;
+}
+
+.nav-menu-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 84px;
+}
+
+.nav-logo {
+  margin-bottom: 87px;
 }
 
 .nav-text {
@@ -104,32 +124,130 @@ img {
 }
 
 .nav-menu {
-  display: none;
   width: 734px;
   position: fixed;
   top: 0;
-  left: 0;
+  right: -100%;
   bottom: 0;
-  background-color: white;
-  z-index: 2;
+  background-color: #c2e6ae;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, right 0.6s ease;
 }
-.nav-menu p {
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
+.nav-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  right: 0;
 }
 
-.is-open {
+.nav-contents {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto 1fr;
+}
+
+.nav-contents-title p {
+  color: #786552;
+  font-family: "Noto Sans JP";
+  font-size: 17.277px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.728px;
+  width: fit-content;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 16px;
+  right: -10px;
+}
+
+.nav-border {
+  width: 1.234px;
+  height: 100%;
+  background-color: #786552;
+  margin-right: 23px;
+}
+
+.nav-list-title {
+  color: #786552;
+  font-family: "Noto Sans JP";
+  font-size: 17.277px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.728px;
+  margin-bottom: 10px;
+}
+
+.nav-list-link {
+  margin: 10px 0;
+}
+.nav-list-link a {
+  color: #786552;
+  font-family: "Noto Serif JP";
+  font-size: 17.277px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.681px;
+  letter-spacing: 1.728px;
+  transition: color 0.3s ease;
+}
+.nav-list-link a:hover {
+  color: #A9CA97;
+}
+
+.nav-tel-box {
+  margin: 100px 0 52px;
+}
+.nav-tel-box p {
+  color: #786552;
+  font-family: "Noto Sans JP";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.7px;
+}
+.nav-tel-box a {
+  color: #786552;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+.nav-tel-box a:hover {
+  color: #A9CA97;
+}
+
+.nav-sns {
+  display: flex;
+  column-gap: 33px;
+}
+.nav-sns a {
   display: block;
 }
 
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(194, 230, 174, 0.29);
+  cursor: pointer;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.overlay.is-open {
+  opacity: 1;
+  visibility: visible;
   z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

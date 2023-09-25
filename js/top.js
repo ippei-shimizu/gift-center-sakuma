@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navMenu.classList.contains("is-open")) {
       navMenu.classList.remove("is-open");
       overlay.classList.remove("is-open");
+      navBtn.classList.remove("openRotate");
       navText.textContent = "MENU";
     } else {
       navMenu.classList.add("is-open");
       overlay.classList.add("is-open");
+      navBtn.classList.add("openRotate");
       navText.textContent = "CLOSE";
     }
   });
