@@ -1,2 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+th,
+td,
+dt,
+dd,
+small,
+strong {
+  font-family: "Noto Sans JP";
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.header {
+  background-color: #c2e6ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-inner {
+  padding: 41px 60px 19px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+}
+
+.header-nav-wrap {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-list a {
+  color: #786552;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: color 0.25s;
+  letter-spacing: 1.6px;
+}
+.header-list a:hover {
+  color: #A9CA97;
+}
+
+.nav-btn {
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: transform 0.25s;
+}
+.nav-btn:hover {
+  transform: rotate(0);
+}
+
+.nav-box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #786552;
+}
+
+.nav-text {
+  color: #786552;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-menu {
+  display: none;
+  width: 734px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+}
+.nav-menu p {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.is-open {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 /*# sourceMappingURL=style.css.map */
