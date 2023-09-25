@@ -124,13 +124,14 @@ img {
 }
 
 .nav-menu {
-  width: 734px;
+  max-width: 734px;
+  width: 80%;
   position: fixed;
   top: 0;
   right: -100%;
   bottom: 0;
   background-color: #c2e6ae;
-  z-index: -1;
+  z-index: 101;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, right 0.6s ease;
@@ -138,7 +139,6 @@ img {
 .nav-menu.is-open {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
   right: 0;
 }
 
@@ -248,6 +248,31 @@ img {
 .overlay.is-open {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  z-index: 100;
+}
+
+.fv {
+  padding-top: 162px;
+  height: 100vh;
+  max-height: 900px;
+}
+.fv .swiper-pagination {
+  position: relative;
+  top: 43px;
+}
+.fv .swiper-pagination-bullet {
+  width: 60px;
+  height: 2px;
+  background: #efede6;
+  margin: 0 30px !important;
+  border-radius: 0;
+  display: inline-block;
+}
+.fv .swiper-pagination-bullet-active {
+  background: #786552;
+}
+
+.fv-img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,4 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.classList.remove("is-open");
     navText.textContent = "MENU";
   });
+
+  new Swiper(".swiper-container", {
+    slidesPerView: 1.3, // 1画面の表示枚数（少し見切れさせるために1.12に設定）
+    spaceBetween: 50, // スライド同士の間隔
+    centeredSlides: true, // スライドを中央に表示
+    speed: 500,
+    loop: true, // ループスライド
+    autoplay: {
+      delay: 5000, // 2.5秒ごとに自動スライド
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
 });

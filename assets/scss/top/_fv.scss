@@ -1,0 +1,26 @@
+@use "../setting/index" as *;
+
+.fv {
+  padding-top: 162px;
+  height: 100vh;
+  max-height: 900px;
+  .swiper-pagination {
+    position: relative;
+    top: 43px;
+  }
+  .swiper-pagination-bullet {
+    width: 60px;
+    height: 2px;
+    background: #efede6;
+    margin: 0 30px!important;
+    border-radius: 0;
+    display: inline-block;
+  }
+  .swiper-pagination-bullet-active {
+    background: $color-text;
+  }
+}
+
+.fv-img {
+  width: 100%;
+}

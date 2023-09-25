@@ -118,20 +118,20 @@ img {
   line-height: normal;
 }
 .nav-menu {
-  width: 734px;
+  max-width: 734px;
+  width: 80%;
   position: fixed;
   top: 0;
   right: -100%;
   bottom: 0;
   background-color: $color-bg;
-  z-index: -1;
+  z-index: 101;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, right 0.6s ease;
   &.is-open {
     opacity: 1;
     visibility: visible;
-    z-index: 2;
     right: 0;
   }
 }
@@ -237,6 +237,6 @@ img {
   &.is-open {
     opacity: 1;
     visibility: visible;
-    z-index: 1;
+    z-index: 100;
   }
 }
