@@ -34,11 +34,41 @@ dd,
 small,
 strong {
   font-family: $family-noto-sans-jp;
+  color: $color-text;
 }
 
 img {
   display: block;
   height: auto;
+}
+
+.header-tel {
+  display: none;
+  @include media(bp998) {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 81px;
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: $color-text;
+      -webkit-mask-image: url(../assets/images/tel.svg);
+      mask-image: url(../assets/images/tel.svg);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .header {
@@ -55,9 +85,18 @@ img {
   grid-template-columns: auto 1fr 60px;
   align-items: center;
   justify-content: space-between;
+  @include media(bp998) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .logo {
   display: block;
+}
+.header-nav {
+  @include media(bp998) {
+    display: none;
+  }
 }
 .header-nav-wrap {
   display: flex;
@@ -239,5 +278,100 @@ img {
     opacity: 1;
     visibility: visible;
     z-index: 100;
+  }
+}
+
+@include media(bp767) {
+  .nav-menu {
+    width: 100%;
+    overflow: scroll;
+  }
+  .nav-menu-inner {
+    padding: 105px 45px 101px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav-logo {
+    margin-bottom: 69px;
+    img {
+      width: 194.687px;
+    }
+  }
+  .nav-contents {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .nav-contents-title {
+    p {
+      transform: rotate(0);
+      position: initial;
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 18px;
+    }
+  }
+  .nav-contents-box {
+    padding-left: 18px;
+  }
+  .nav-list-title {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    padding: 15px 0;
+    margin-bottom: 0;
+    position: relative;
+    border-top: 1px solid $color-text;
+    &::after {
+      content: "▼";
+      font-size: 14px;
+      color: $color-text;
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%);
+    }
+  }
+  .nav-list-link {
+    margin: 0 0 8px;
+    a {
+      font-size: 14px;
+      letter-spacing: 1.4px;
+    }
+  }
+  .nav-list-title-about {
+    &::after {
+      display: none;
+    }
+  }
+  .nav-border {
+    display: none;
+  }
+  .nav-list-item-wrap {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  .nav-tel-box {
+    margin-bottom: 50px;
+    p {
+      font-size: 14px;
+      letter-spacing: 1.4px;
+      text-align: center;
+    }
+    a {
+      font-size: 24px;
+      letter-spacing: 2.4px;
+    }
+  }
+  .nav-sns {
+    padding-bottom: 101px;
+    column-gap: 31px;
+    a {
+      img {
+        width: 41px;
+        height: 42px;
+      }
+    }
   }
 }

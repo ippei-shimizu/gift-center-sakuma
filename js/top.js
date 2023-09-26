@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
       type: "bullets",
       clickable: true,
     },
+    breakpoints: {
+      767: {
+        slidesPerView: 1.3,
+        spaceBetween: 50, // 767px以下の場合、spaceBetweenを5pxに設定
+      },
+      100: {
+        slidesPerView: 1,
+        spaceBetween: 5, // 767px以下の場合、spaceBetweenを5pxに設定
+      },
+    },
   });
 
   new Swiper(".top-category-contents", {
@@ -55,5 +65,64 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      767: {
+        slidesPerView: 4,
+        spaceBetween: 18, // 767px以下の場合、spaceBetweenを5pxに設定
+      },
+      100: {
+        slidesPerView: 2,
+        spaceBetween: 4, // 767px以下の場合、spaceBetweenを5pxに設定
+      },
+    },
+  });
+
+  new Swiper(".sp-top-catalog-slider", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 600,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  document
+    .getElementById("pageTop")
+    .addEventListener("click", function (event) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+
+  const titles = document.querySelectorAll(
+    ".nav-list-title.nav-list-title-acoodion"
+  );
+
+  titles.forEach(function (title) {
+    title.addEventListener("click", function () {
+      // 767px以下の場合のみアコーディオンの動作を有効にする
+      if (window.innerWidth <= 767) {
+        // クリックされたタイトルの次の要素（.nav-list-item-wrap）の高さを取得
+        const targetElement = this.nextElementSibling;
+        const targetHeight = targetElement.scrollHeight;
+        // 現在の高さを取得
+        const currentHeight = targetElement.offsetHeight;
+
+        // アコーディオンの状態を切り替える
+        if (currentHeight > 0) {
+          targetElement.style.height = "0px";
+        } else {
+          targetElement.style.height = `${targetHeight}px`;
+        }
+      }
+    });
   });
 });

@@ -74,13 +74,56 @@ wp_reset_postdata();
 ?>
 </div>
   </div>
+<div class="sp-pickup">
+  <div class="sp-pickup-title">
+    <h2>PICK UP</h2>
+    <h3>ギフトセンター サクマ<br>オススメのギフト</h3>
+    <div class="sp-pickup-border"></div>
+  </div>
+  <?php
+$args = array(
+  'posts_per_page' => 3,
+  'category_name'  => 'pickup',
+  'orderby'        => 'date',
+  'order'          => 'DESC',
+);
+$pickup_posts = new WP_Query($args);
+if ($pickup_posts->have_posts()) : while ($pickup_posts->have_posts()) : $pickup_posts->the_post();
+?>
+<a href="<?php the_permalink(); ?>" class="top-pick-link">
+  <div class="top-pick-item">
+    <?php
+    if (has_post_thumbnail()) :
+      the_post_thumbnail('full'); 
+    endif;
+    ?>
+    <div class="top-pick-item-text">
+      <?php if (get_field('pickup-tag')) : ?>
+      <div class="pickup-tag">
+        <?php the_field('pickup-tag'); ?>
+      </div>
+      <?php endif; ?>
+      <h2 class="pickup-title"><?php the_title(); ?></h2>
+      <?php if (get_field('pickup-sub')) : ?>
+      <div class="pickup-sub">
+        <?php the_field('pickup-sub'); ?>
+      </div>
+      <?php endif; ?>
+    </div>
+  </div>
+</a>
+<?php
+endwhile; endif;
+wp_reset_postdata(); 
+?>
+</div>
 </div>
 
 <!-- catalog gift -->
 <div class="top-catalog">
   <div class="top-catalog-inner">
     <h2 class="section-title fadeUpText">CATALOG GIFT</h2>
-    <h3 class="section-sub-title fadeUpText">ギフトセンター サクマ が取り扱っているカタログギフト</h3>
+    <h3 class="section-sub-title fadeUpText">ギフトセンター サクマ が取り扱っている<br class="pc-br">カタログギフト</h3>
     <div class="top-catalog-contents">
       <div class="top-catalog-item">
         <a href="https://shaddy.jp/gs_front/app/shop/shop_introduction/search/yamanashi/nakakoma/50540-000/" target="_blank">
@@ -100,6 +143,30 @@ wp_reset_postdata();
         </a>
       </div>
     </div>
+<div class="sp-top-catalog-slider">
+<div class="swiper-wrapper">
+<!-- Start Slide Items -->
+<div class="swiper-slide top-catalog-item">
+  <a href="https://shaddy.jp/gs_front/app/shop/shop_introduction/search/yamanashi/nakakoma/50540-000/" target="_blank">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-01.png" width="250px" height="389px" alt="shaddy" loading="lazy">
+  </a>
+</div>
+<div class="swiper-slide top-catalog-item">
+  <a href="https://www.harmonick.co.jp/catalog-gift/" target="_blank">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
+  </a>
+</div>
+<div class="swiper-slide top-catalog-item">
+  <a href="https://www.ringbell.co.jp/" target="_blank">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-03.png" width="250px" height="389px" alt="RINGBELL" loading="lazy">
+  </a>
+</div>
+<!-- End Slide Items -->
+</div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
   </div>
 </div>
 
@@ -117,7 +184,7 @@ wp_reset_postdata();
         ?>
             <div class="swiper-slide">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cat-0<?php echo $index + 1; ?>.png" width="307px" height="130px" alt="<?php echo $category; ?>" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cat-0<?php echo $index + 1; ?>.png" width="307px" height="130px" alt="<?php echo $category; ?>" loading="lazy">
                 </a>
             </div>
         <?php endforeach; ?>
@@ -163,6 +230,35 @@ endwhile; endif;
 wp_reset_postdata(); 
 ?>
 </div>
+    </div>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="top-contact">
+  <div class="top-contact-inner">
+    <div class="top-contact-box">
+      <h2>お問い合わせ</h2>
+      <p class="top-contact-text">
+      ギフトについてのご相談も<br class="pc-br">お気軽にお問い合せください。<br>来店のご予約も承ります。
+      </p>
+      <p class="top-contact-tel">
+        <a href="tel:055-275-5178">055-275-5178</a>
+      </p>
+      <p class="top-contact-text">
+      現在お電話のみでお問い合せを受け付けております。
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="top-sns">
+  <div class="top-sns-inner">
+    <div class="top-sns-facebook">
+
+    </div>
+    <div class="top-sns-instagram">
+      
     </div>
   </div>
 </div>

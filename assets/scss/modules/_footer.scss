@@ -1,0 +1,220 @@
+@use "../setting/index" as *;
+
+.footer {
+  padding: 111px 0 46px;
+  background-color: $color-bg;
+}
+.footer-inner {
+  width: 95%;
+  max-width: 1044px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+.footer-left {
+}
+.footer-logo {
+}
+.footer-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin: 66px 0 17px;
+}
+.footer-info {
+  p,
+  a {
+    font-family: $family-noto-serif-jp;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1.4px;
+  }
+}
+.google-map {
+  width: 165px;
+  height: 30px;
+  border: 1px solid $color-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0 25px;
+  a {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 14px;
+      min-width: 14px;
+      height: 18px;
+      min-height: 18px;
+      background-color: $color-text;
+      -webkit-mask-image: url(../assets/images/pin.svg);
+      mask-image: url(../assets/images/pin.svg);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: -22px;
+      transform: translateY(-50%);
+    }
+  }
+}
+.footer-time {
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1.4px;
+  margin-bottom: 9px;
+}
+.footer-in {
+  display: flex;
+  column-gap: 17px;
+  align-items: center;
+  p {
+    font-family: $family-noto-serif-jp;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1.4px;
+  }
+}
+.footer-right {
+  position: relative;
+  .nav-contents-box-01 {
+    margin-right: 63px;
+  }
+}
+.copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: $family-noto-serif-jp;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 1.2px;
+}
+.sp-br {
+  display: block;
+}
+.address {
+  font-family: $family-noto-serif-jp;
+}
+.copy-sp {
+  display: none;
+}
+.page-top {
+  display: none;
+}
+@include media(bp840) {
+  .sp-br {
+    display: none;
+  }
+  .footer-right {
+    .nav-contents {
+      display: none;
+    }
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-logo {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .address {
+    padding-right: 4px;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .footer-time {
+    text-align: center;
+  }
+  .footer-in {
+    flex-direction: column;
+    row-gap: 4px;
+    margin-top: 22px;
+  }
+  .copy-sp {
+    display: block;
+    font-family: $family-noto-serif-jp;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+  }
+}
+
+@include media(bp767) {
+  .footer {
+    padding: 80px 12px 63px;
+    position: relative;
+  }
+  .footer-logo {
+    img {
+      width: 100px;
+    }
+  }
+  .footer-title {
+    margin: 30px auto;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+  .footer-info {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .footer-time {
+    font-size: 10px;
+    line-height: 20px; /* 200% */
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+  .footer-in {
+    p {
+      font-size: 10px;
+      line-height: 20px; /* 200% */
+      letter-spacing: 1px;
+    }
+  }
+  .page-top {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+  }
+}
+

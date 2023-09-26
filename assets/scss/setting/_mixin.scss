@@ -1,0 +1,20 @@
+// ブレイクポイント
+$breakpoint-up: (
+  "bp998": "screen and (max-width: 998px)",
+  "bp840": "screen and (max-width: 840px)",
+  "bp767": "screen and (max-width: 767px)",
+) !default;
+
+// メディアクエリ
+@mixin media($breakpoint: "bp767") {
+  // デフォルトのブレイクポイントをbp390に変更
+  $media-query: map-get($breakpoint-up, $breakpoint);
+
+  @if $media-query {
+    @media #{$media-query} {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
