@@ -125,4 +125,103 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // GSAPとScrollTriggerのプラグインをアクティベート
+  gsap.registerPlugin(ScrollTrigger);
+
+  // fadeUpText要素を選択
+  let fadeUpTextElements = document.querySelectorAll(".fadeUpText");
+
+  // 各要素に対してアニメーションを設定
+  fadeUpTextElements.forEach((element) => {
+    gsap.fromTo(
+      element,
+      {
+        translateY: "10px",
+        scale: 0.99,
+        opacity: 0,
+      },
+      {
+        translateY: "0",
+        scale: 1,
+        opacity: 1,
+        duration: 0.6,
+        ease: "cubic-bezier(.645,.045,.355,1)",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%", // この値を調整して、要素が画面に入ったタイミングを変更
+          once: true, // アニメーションは一度だけ発火
+        },
+      }
+    );
+  });
+
+  // animationBorder要素を選択
+  let animationBorderElements = document.querySelectorAll(".animationBorder");
+  let animationBorderElements02 = document.querySelectorAll(
+    ".animationBorder-02"
+  );
+
+  // 各要素に対してアニメーションを設定
+  animationBorderElements.forEach((element) => {
+    gsap.fromTo(
+      element,
+      {
+        width: "0%",
+      },
+      {
+        width: "100%",
+        duration: 1, // ここでは1秒としていますが、任意の時間に調整可能
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          once: true, // アニメーションは一度だけ発火
+        },
+      }
+    );
+  });
+
+  animationBorderElements02.forEach((element) => {
+    gsap.fromTo(
+      element,
+      {
+        width: "0%",
+      },
+      {
+        width: "100%",
+        duration: 2, // ここでは1秒としていますが、任意の時間に調整可能
+        delay: 0.4,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          once: true, // アニメーションは一度だけ発火
+        },
+      }
+    );
+  });
+
+  let fadeInImgElements = document.querySelectorAll(".fadeInImg");
+
+  // 各要素に対してアニメーションを設定
+  fadeInImgElements.forEach((element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1.6,
+        delay: 0.4,
+        ease: "cubic-bezier(.645,.045,.355,1)",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 70%",
+          once: true, // アニメーションは一度だけ発火
+        },
+      }
+    );
+  });
 });

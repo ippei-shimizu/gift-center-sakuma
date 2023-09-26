@@ -23,7 +23,7 @@
       <nav class="header-nav">
         <ul class="header-nav-wrap">
           <il class="header-list">
-            <a href="">ギフトの選び方・贈り方</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>">ギフトの選び方・贈り方</a>
           </il>
           <il class="header-list">
             <a href="">オリジナルサービス</a>

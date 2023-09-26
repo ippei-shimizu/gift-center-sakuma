@@ -32,31 +32,31 @@
         <div class="nav-contents-box nav-contents-box-01">
           <p class="nav-list-title">ギフトの選び方・贈り方</p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">結婚</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">結婚</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">出産</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">出産</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">快気・お見舞い</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">快気・お見舞い</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">入進学・就職・長寿</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">入進学・就職・長寿</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">新築・引越し</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">新築・引越し</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">仏事・法要</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">仏事・法要</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">御中元・御歳暮</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">御中元・御歳暮</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">イベント景品</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">イベント景品</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">カタログギフト</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">カタログギフト</a>
           </p>
         </div>
         <div class="nav-border"></div>
