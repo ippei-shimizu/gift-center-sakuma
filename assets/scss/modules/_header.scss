@@ -111,8 +111,8 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    transition: color 0.25s;
     letter-spacing: 1.6px;
+    transition: color 0.25s;
     &:hover {
       color: $color-hover-text;
     }
