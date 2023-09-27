@@ -284,6 +284,332 @@
         </p>
       </div>
     </div><!-- employmen end -->
-
-  </div>
+    <div id="moving" class="how-item">
+      <div class="how-item-top">
+        <div class="how-item-img-box">
+          <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/moving.png" width="754px" height="250px" alt="新築・引越し" loading="lazy">
+        </div>
+        <div class="how-item-title">
+          <h2 class="how-item-main-title fourFadeUp">新築・引越し</h2>
+          <p class="how-item-sub-title fourFadeUp">housewarming</p>
+          <div class="how-item-title-bg secondFadeUp"></div>
+        </div>
+        <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
+      </div>
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">新築祝いの選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        自宅やオフィスを新築したり、マンションを購入された方には、新しいスタートを応援する気持ちで、１ヶ月以内に贈りましょう。時計や花瓶・絵画など新しい住まいを彩るインテリア用品を贈る方が多いようです。スリッパや玄関マットも人気があります。親しい間柄なら早めにご希望をたずね、欲しかったり買い換えたかったモノを贈りましょう。
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-22.png" width="206px" height="206px" alt="ボトルフラワーボール" loading="lazy">
+            <h4 class="fadeUpText">ボトルフラワーボール</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-23.png" width="206px" height="206px" alt="ブリザードフラワー" loading="lazy">
+            <h4 class="fadeUpText">ブリザードフラワー</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-24.png" width="206px" height="206px" alt="カタログギフト" loading="lazy">
+            <h4 class="fadeUpText">カタログギフト</h4>
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">内祝い・お礼・ご挨拶の選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        お返しには 日用品やお菓子などを贈ることが多いようです。今まで住んでいた近所の方には 「ありがとう、お世話になりました」の気持ちを込めてお礼をしましょう。お菓子やタオル・洗剤などを贈る方が多いようです。引越し先の近所の方には「これから宜しくお願いします」の気持ちで、タオル・洗剤・ラップ等が喜ばれています。
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-25.png" width="206px" height="206px" alt="ハンドソープセット" loading="lazy">
+            <h4 class="fadeUpText">ハンドソープセット</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-26.png" width="206px" height="206px" alt="洗剤" loading="lazy">
+            <h4 class="fadeUpText">洗剤</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-27.png" width="206px" height="206px" alt="ラップ" loading="lazy">
+            <h4 class="fadeUpText">ラップ</h4>
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+    </div><!-- moving end -->
+    <div id="buddhist" class="how-item">
+      <div class="how-item-top">
+        <div class="how-item-img-box">
+          <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/buddhist.png" width="754px" height="250px" alt="新築・引越し" loading="lazy">
+        </div>
+        <div class="how-item-title">
+          <h2 class="how-item-main-title fourFadeUp">仏事・法要</h2>
+          <p class="how-item-sub-title fourFadeUp">ceremony</p>
+          <div class="how-item-title-bg secondFadeUp"></div>
+        </div>
+        <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
+      </div>
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">引き物の選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        仏式の場合七七日（四十九日）または五七日（三十五日）が忌明けにあたります。神式では三十日祭 五十日祭、キリスト教では逝去後一ヶ月目の召天記念日が仏式のそれにあたります。<br>
+法事の引き物は出席していただいた方々に感謝の気持ちを込めて渡すようにしましょう。<br>
+また出席できなかった方でも、故人を偲んでくださった方にはお礼としての品物を贈りましょう。<br>
+日常で使うような実用品が好まれています。引き物にプラスしてお引き菓子やお茶等をつける方も多いです。
+        </p>
+        <div class="how-item-img-wrap-02 how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-28.png" width="206px" height="206px" alt="今治タオル" loading="lazy">
+            <h4 class="fadeUpText">今治タオル</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-29.png" width="206px" height="206px" alt="調味料詰合せ" loading="lazy">
+            <h4 class="fadeUpText">調味料詰合せ</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-30.png" width="206px" height="206px" alt="食品セット" loading="lazy">
+            <h4 class="fadeUpText">食品セット</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-31.png" width="206px" height="206px" alt="信玄餅万寿" loading="lazy">
+            <h4 class="fadeUpText">信玄餅万寿</h4>
+          </div>
+        </div>
+        <div class="how-item-buddhist-text">
+          <p class="fadeUpText">お供えの品もご用意いたします。</p>
+          <div class="buddhist-border animationBorder"></div>
+        </div>
+        <div class="how-item-img-wrap-03 how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-32.png" width="206px" height="206px" alt="御本堂用" loading="lazy">
+            <h4 class="fadeUpText">御本堂用</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-33.png" width="206px" height="206px" alt="法要会場用" loading="lazy">
+            <h4 class="fadeUpText">法要会場用</h4>
+          </div>
+        </div>
+        <p class="buddhist-text fadeUpText">その他お供え用の果物もご用意させていただきます。</p>
+      </div>
+    <!-- ! -->
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">御香典返しの選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        香典返しの目安は”半返し”ということで、いただいた御香典の半額程度が一般的だといわれています。また御香典をいただいた方、一人ひとりに入念な品選びをすることは時間的にも難しいので、御厚志額に応じていくつかのランクに分けて選ぶとよいでしょう。<br>
+挨拶状をつけてお返しする方が多いようです。<br>
+『御香典返し』という言葉は、本来仏式の物ですが、神式やキリスト教の場合でも同じようにお返しをする習わしが多いようです。<br>
+神式では三十日祭または五十日祭が忌明けにあたるため、仏式と同じように挨拶状と一緒にお返しします。キリスト教では特別に忌明けの習慣はありませんが御逝去一ヶ月目の追悼ミサを終えた際、故人を偲ぶ品を贈るケースが多くあるようです。
+        </p>
+      </div>
+    <!-- ! -->
+    <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">仏事オリジナルサービス</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <div class="buddhist-flex">
+          <p class="how-item-content-text fadeUpText">
+          ●御法要ご予約の方に 法要案内ハガキの印刷無料<br>
+  ●お品の数だけ 挨拶状無料<br>
+  （神式、キリスト教などもご相談ください）<br>
+  ●生前お見舞いを頂いたり、御供花などを頂いた方へ<br>
+  　各種御礼のカード無料<br>
+  ●法要引き物・御供物 生花 果物 饅頭 など承ります
+  <br>
+  <br>
+  お電話いただければ ご都合に合わせて伺います。<br>
+  その他お気軽にお問い合わせください。
+          </p>
+          <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-34.png" width="216px" height="206px" alt="フルーツ盛り合わせ" loading="lazy">
+        </div>
+      </div>
+    <!-- ! -->
+    </div><!-- buddhist end -->
+    <div id="gift" class="how-item">
+      <div class="how-item-top">
+        <div class="how-item-img-box">
+          <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/gift.png" width="754px" height="250px" alt="御中元・御歳暮" loading="lazy">
+        </div>
+        <div class="how-item-title">
+          <h2 class="how-item-main-title fourFadeUp">御中元・御歳暮</h2>
+          <p class="how-item-sub-title fourFadeUp">summer-yearend</p>
+          <div class="how-item-title-bg secondFadeUp"></div>
+        </div>
+        <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
+      </div>
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">お中元の選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        お中元は７月からお盆前くらいまでに贈ることが多いですが、 地域によっては６月から７月中旬頃までに贈るところもあります。ジュースやビールの飲料系やゼリー・素麺などの 夏らしい食品が多く選ばれています。<br>
+また、県産ギフトの桃や煮貝、甲州ワインビーフなども喜ばれています。
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-35.png" width="206px" height="206px" alt="ジュース" loading="lazy">
+            <h4 class="fadeUpText">ジュース</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-36.png" width="206px" height="206px" alt="煮貝詰合せ" loading="lazy">
+            <h4 class="fadeUpText">煮貝詰合せ</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-37.png" width="206px" height="206px" alt="揖保の糸" loading="lazy">
+            <h4 class="fadeUpText">揖保の糸</h4>
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">お歳暮の選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        お歳暮は１２月初旬からクリスマス前までくらいの間に贈ります。<br>
+喜ばれるのはお正月によく使われるハム類、産地直送品、油・調味料のセット などが喜ばれています。また、会社関係に贈る場合は職場みんなで口にできるコーヒーやお菓子の詰合せが人気です。<br>
+県産品のワインビーフや煮貝、ほうとうは年間を通じてギフトに選ばれています。
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-38.png" width="206px" height="206px" alt="甲州ワインビーフ" loading="lazy">
+            <h4 class="fadeUpText">甲州ワインビーフ</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-39.png" width="206px" height="206px" alt="スティックコーヒー" loading="lazy">
+            <h4 class="fadeUpText">スティックコーヒー</h4>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-40.png" width="206px" height="206px" alt="サクマオリジナルギフト" loading="lazy">
+            <h4 class="fadeUpText">サクマオリジナルギフト</h4>
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+    <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">お中元・お歳暮オリジナルサービス</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        早期承り特別価格実施中<br>
+◎早期（弊社が定める日迄）にご予約、お買い求め頂ければ、早期特別価格にて対応させていただきます。<br>
+◎価格等は それぞれの時期にチラシ等でご確認ください。<br>
+◎一部対象外商品がございます。<br>
+尚、ご不明な点はお電話にて御問い合わせ下さいますようお願い申し上げます。
+        </p>
+      </div>
+  </div><!-- gift end -->
+  <div id="event" class="how-item">
+      <div class="how-item-top">
+        <div class="how-item-img-box">
+          <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/event.png" width="754px" height="250px" alt="イベント景品" loading="lazy">
+        </div>
+        <div class="how-item-title">
+          <h2 class="how-item-main-title fourFadeUp">イベント景品</h2>
+          <p class="how-item-sub-title fourFadeUp">event prizes</p>
+          <div class="how-item-title-bg secondFadeUp"></div>
+        </div>
+        <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
+      </div>
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">トロフィー、楯、メダル、カップ</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        </p>
+        <div class="how-item-img-wrap-02 how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-41.png" width="206px" height="206px" alt="トロフィー" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-42.png" width="206px" height="206px" alt="楯" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-43.png" width="206px" height="206px" alt="メダル" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-44.png" width="206px" height="206px" alt="カップ" loading="lazy">
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">ゴルフ、グラウンドゴルフ、運動会など</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-45.png" width="206px" height="206px" alt="ラップ" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-46.png" width="206px" height="206px" alt="洗剤" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-47.png" width="206px" height="206px" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+    <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">叙勲額、記念品など</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-48.png" width="206px" height="206px" alt="ラップ" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-49.png" width="206px" height="206px" alt="洗剤" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-50.png" width="206px" height="206px" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    <!-- ! -->
+    </div><!-- buddhist end -->
+    <div id="catalog" class="how-item">
+      <div class="how-item-top">
+        <div class="how-item-img-box">
+          <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog.png" width="754px" height="250px" alt="イベント景品" loading="lazy">
+        </div>
+        <div class="how-item-title">
+          <h2 class="how-item-main-title fourFadeUp">カタログギフト</h2>
+          <p class="how-item-sub-title fourFadeUp">catalog gift</p>
+          <div class="how-item-title-bg secondFadeUp"></div>
+        </div>
+        <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
+      </div>
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">トロフィー、楯、メダル、カップ</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-51.png" width="206px" height="206px" alt="トロフィー" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-52.png" width="206px" height="206px" alt="楯" loading="lazy">
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-53.png" width="206px" height="206px" alt="メダル" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

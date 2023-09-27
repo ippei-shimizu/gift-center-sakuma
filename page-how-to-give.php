@@ -14,14 +14,14 @@
       <div class="how-fv-square how-fv-square-01"></div>
       <div class="how-fv-square how-fv-square-02"></div>
       <div class="how-fv-item how-fv-item-top">
-        <h2 class="fadeUpText">贈り物とは</h2>
-        <div class="how-fv-border animationBorder"></div>
-        <p class="how-fv-text fadeUpText">贈答には「贈る」と「お返し」という意味があり、ひとつの流れとして考えられています。相手を想うギフトを贈り合うだけで、そこにはすてきなコミュニケーションが生まれます。</p>
+        <h2 class="fadeUpText-how">贈り物とは</h2>
+        <div class="how-fv-border animationBorderHow"></div>
+        <p class="how-fv-text fadeUpText-how">贈答には「贈る」と「お返し」という意味があり、ひとつの流れとして考えられています。相手を想うギフトを贈り合うだけで、そこにはすてきなコミュニケーションが生まれます。</p>
       </div>
       <div class="how-fv-item how-fv-item-btm">
-        <h2 class="fadeUpText">人生の節目に贈りたい</h2>
-        <div class="how-fv-border animationBorder"></div>
-        <p class="how-fv-text fadeUpText">人生の節目のタイミングで、自分以外の誰かからの心遣いは、とても嬉しく心に残るはずです。心に残る節目をお互いにお祝いし合う関係は、これからも人生における大切な財産になります。</p>
+        <h2 class="fadeUpText-how">人生の節目に贈りたい</h2>
+        <div class="how-fv-border animationBorderHow"></div>
+        <p class="how-fv-text fadeUpText-how">人生の節目のタイミングで、自分以外の誰かからの心遣いは、とても嬉しく心に残るはずです。心に残る節目をお互いにお祝いし合う関係は、これからも人生における大切な財産になります。</p>
       </div>
     </div>
     <div class="how-fv-bg">
@@ -77,6 +77,7 @@ foreach ($categories as $link => $category) :
       <?php get_template_part('templates/how-contents'); ?>
     </div>
   </div>
+</div>
 </div>
 
 <?php get_footer(); ?>

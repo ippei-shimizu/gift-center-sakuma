@@ -52,20 +52,28 @@
   position: relative;
   z-index: 3;
   &-top {
-    background-color: $color-bg-02;
+    background-color: transparent;
     padding: 16px 43px 42px;
     max-width: 640px;
     min-width: 640px;
     width: 90%;
+    transition: background-color .3s ease-in-out;
+    &.animationSquareBg {
+      background-color: $color-bg-02;
+    }
   }
   &-btm {
-    background-color: $color-bg-sakuma;
+    background-color: transparent;
     padding: 25px 48px 32px;
     max-width: 540px;
     min-width: 540px;
     width: 80%;
     top: 32px;
     left: 67%;
+    transition: background-color .3s ease-in-out;
+    &.animationSquareBg {
+      background-color: $color-bg-sakuma;
+    }
   }
   h2 {
     font-family: $family-noto-serif-jp;
@@ -95,6 +103,11 @@
   border: 2px solid #eee;
   position: absolute;
   z-index: 1;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  &.animationSquareBg {
+    opacity: 1;
+  }
   &-01 {
     width: 640px;
     height: 254px;
@@ -121,7 +134,7 @@
 }
 
 .how-ct {
-  padding: 523px 0 432px;
+  padding: 523px 0 0;
 }
 .how-ct-inner {
   width: 84%;
@@ -136,8 +149,10 @@
 }
 .how-ct-nav {
   position: sticky;
-  top: 120px;
+  top: 156px;
   left: 0;
+  height: fit-content;
+  padding-bottom: 140px;
 }
 .how-ct-title {
   font-size: 20px;
@@ -338,6 +353,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
 }
+.how-item-img-wrap-02 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.how-item-img-wrap-03 {
+  grid-template-columns: 206px 206px;
+  justify-content: center;
+}
 .how-item-content-img {
   img {
     width: 100%;
@@ -427,5 +449,45 @@
 .how-beige {
   .cell-name {
     color: #b6b6b6 !important;
+  }
+}
+.how-item-buddhist-text {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  column-gap: 18px;
+  align-items: center;
+  margin: 55px 0 47px;
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+  }
+  .buddhist-border {
+    max-width: 416px;
+    width: 100%;
+    height: 3px;
+    background-color: $color-bg-sakuma;
+  }
+}
+.buddhist-text {
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-top: 41px;
+}
+.buddhist-flex {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  column-gap: 5%;
+  padding: 0 45px;
+  .how-item-content-text {
+    padding: 0;
+    width: 100%;
   }
 }
