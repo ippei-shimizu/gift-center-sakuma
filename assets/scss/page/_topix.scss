@@ -1,0 +1,135 @@
+@use "../setting/index" as *;
+
+.index {
+  padding-top: 120px;
+  padding-bottom: 385px;
+}
+.index-title {
+  text-align: center;
+  margin-top: 15px;
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+  span {
+    font-family: $family-noto-serif-jp;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    display: block;
+  }
+}
+.category-list {
+  margin: 100px auto 68px;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  li {
+    a {
+      &.active {
+        color: $color-text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.6px;
+      }
+      color: #c6c2c2;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6px;
+    }
+  }
+}
+.post-lists {
+  max-width: 1044px;
+  width: 90%;
+  margin: 0 auto;
+}
+.index-border {
+  height: 5px;
+  background-color: $color-bg-sakuma;
+}
+.post-list-wrap {
+  max-width: 710px;
+  width: 90%;
+  margin: 76px auto;
+}
+.index-post-box {
+  &:last-child {
+    a {
+      border-bottom: 1px solid $color-text;
+    }
+  }
+}
+.index-post {
+  width: 100%;
+  a {
+    display: grid;
+    grid-template-columns: auto 1fr 11px;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid $color-text;
+  }
+}
+.index-date {
+  margin-right: 57px;
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.index-post-title {
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.index-arrow {
+  font-family: $family-noto-serif-jp;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.index-pagination {
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  span {
+    color: $color-text;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+  }
+  a {
+    color: #c6c2c2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+  }
+}
+
+@include media(bp767) {
+  
+}

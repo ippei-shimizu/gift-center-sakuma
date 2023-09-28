@@ -33,7 +33,7 @@
           </il>
           </il>
           <il class="header-list">
-            <a href="">TOPIX</a>
+            <a href="<?php echo esc_url(home_url('/topix')); ?>">TOPIX</a>
           </il>
         </ul>
       </nav>
