@@ -131,5 +131,50 @@
 }
 
 @include media(bp767) {
-  
+  .index {
+    padding-top: 80px;
+    padding-bottom: 175px;
+  }
+  .index-title {
+    h2 {
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      span {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .category-list {
+    margin: 58px auto 79px;
+    li {
+      a {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+      }
+    }
+  }
+  .post-list-wrap {
+    width: 88%;
+    margin: 70px auto;
+  }
+  .post-lists {
+    width: 100%;
+  }
+  .index-date {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    margin-right: 28px;
+  }
+  .index-post-title {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+  }
+  .index-arrow {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+  .index-pagination {
+    margin-top: 70px;
+  }
 }
