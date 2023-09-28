@@ -29,7 +29,7 @@
             <a href="<?php echo esc_url(home_url('/service')); ?>">オリジナルサービス</a>
           </il>
           <il class="header-list">
-            <a href="">ABOUT</a>
+            <a href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a>
           </il>
           </il>
           <il class="header-list">

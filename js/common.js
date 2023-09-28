@@ -124,6 +124,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let animationBorderHowElements = document.querySelectorAll(
     ".animationBorderHow"
   );
+  let animationBorderCompanyElements = document.querySelectorAll(
+    ".animationBorderCompany"
+  );
 
   // 各要素に対してアニメーションを設定
   animationBorderElements.forEach((element) => {
@@ -184,6 +187,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
   });
+
+  animationBorderCompanyElements.forEach((element) => {
+    const targetWidth = window.innerWidth <= 767 ? "172%" : "112%";
+  
+    gsap.fromTo(
+      element,
+      {
+        width: "0%",
+      },
+      {
+        width: targetWidth,
+        duration: 2,
+        delay: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          once: true,
+        },
+      }
+    );
+  });
+  
 
   let fadeInImgElements = document.querySelectorAll(".fadeInImg");
 
