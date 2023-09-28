@@ -44,19 +44,46 @@
         </p>
         <div class="how-item-img-wrap">
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-04.png" width="206px" height="206px" alt="鰹節" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-04-01.png" width="206px" height="206px" alt="鰹節" loading="lazy">
             <h4 class="fadeUpText">鰹節</h4>
             <p class="fadeUpText">引き出物の定番。風呂敷包みのタイプが根強い人気。</p>
           </div>
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-05.png" width="206px" height="206px" alt="カタログギフト" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-04-02.png" width="206px" height="206px" alt="カタログギフト" loading="lazy">
             <h4 class="fadeUpText">カタログギフト</h4>
             <p class="fadeUpText">一番人気の大引き。ご予算に応じたラインナップからお選びいただけます。</p>
           </div>
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-06.png" width="206px" height="206px" alt="久右衛門  鯛茶漬け詰合せ" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-04-03.png" width="206px" height="206px" alt="久右衛門  鯛茶漬け詰合せ" loading="lazy">
             <h4 class="fadeUpText">久右衛門  鯛茶漬け詰合せ</h4>
             <p class="fadeUpText">年代・時代を問わず人気のお茶漬け。</p>
+          </div>
+        </div>
+      </div>
+      <!-- ! -->
+      <div class="how-item-content">
+        <h3 class="how-item-content-title fadeUpText">内祝いの選び方</h3>
+        <div class="how-item-content-border animationBorder"></div>
+        <div class="how-item-content-border-short animationBorder"></div>
+        <p class="how-item-content-text fadeUpText">
+        お返しは、挙式の一ヶ月以内に贈りましょう。<br>
+引き出物と同じものを返す方も多いです。
+        </p>
+        <div class="how-item-img-wrap">
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-04.png" width="206px" height="206px" alt="オリジナルカタログセット" loading="lazy">
+            <h4 class="fadeUpText">オリジナルカタログセット</h4>
+            <p class="fadeUpText">カタログギフトにタオルやお菓子などをプラスしたオリジナルのお返し。</p>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-05.png" width="206px" height="206px" alt="はちみつセット" loading="lazy">
+            <h4 class="fadeUpText">はちみつセット</h4>
+            <p class="fadeUpText">健康を考えたこの品なら年上の方へのお返しに最適。</p>
+          </div>
+          <div class="how-item-content-img">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-06.png" width="206px" height="206px" alt="久右衛門  鯛茶漬け詰合せ" loading="lazy">
+            <h4 class="fadeUpText">スターバックスセット</h4>
+            <p class="fadeUpText">コーヒー好きの方に。若い方から年配の方まで喜ばれる人気セット。</p>
           </div>
         </div>
       </div>
@@ -177,17 +204,17 @@
         </p>
         <div class="how-item-img-wrap">
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-13.png" width="206px" height="206px" alt="消耗品" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-14.png" width="206px" height="206px" alt="消耗品" loading="lazy">
             <h4 class="fadeUpText">消耗品</h4>
             <p class="fadeUpText">快気祝いには消耗品がよく選ばれています。病気やけがを洗い流すという意味合いを持つ洗剤・ハンドソープ・石鹸等が喜ばれます。</p>
           </div>
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-14.png" width="206px" height="206px" alt="食品ギフト" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-15.png" width="206px" height="206px" alt="食品ギフト" loading="lazy">
             <h4 class="fadeUpText">食品ギフト</h4>
             <p class="fadeUpText">会社への快気祝いによく選ばれている食品には”食べきる”という意味も含まれています。</p>
           </div>
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-15.png" width="206px" height="206px" alt="スイーツセット" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-13.png" width="206px" height="206px" alt="スイーツセット" loading="lazy">
             <h4 class="fadeUpText">タオルセット</h4>
             <p class="fadeUpText">”拭い去る”意味を持つタオルも人気。</p>
           </div>
@@ -426,10 +453,12 @@
   ●法要引き物・御供物 生花 果物 饅頭 など承ります
   <br>
   <br>
-  お電話いただければ ご都合に合わせて伺います。<br>
-  その他お気軽にお問い合わせください。
+  <span class="sp-none">お電話いただければ ご都合に合わせて伺います。<br>
+  その他お気軽にお問い合わせください。</span>
           </p>
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-34.png" width="216px" height="206px" alt="フルーツ盛り合わせ" loading="lazy">
+          <span class="how-text-sp pc-none fadeUpText">お電話いただければ ご都合に合わせて伺います。<br>
+  その他お気軽にお問い合わせください。</span>
         </div>
       </div>
     <!-- ! -->
