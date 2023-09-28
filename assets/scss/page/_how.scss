@@ -831,3 +831,122 @@
     }
   }
 }
+
+// service
+.service-ct {
+  padding-top: 138px;
+  .how-item-title {
+    margin-top: 0;
+  }
+  .how-item-content-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.7px;
+    margin-bottom: 0;
+  }
+}
+.service-pdf-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: -102px;
+}
+.pdf-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.7px;
+}
+.pdf-border-y {
+  width: 5px;
+  height: 94px;
+  background-color: $color-bg-sakuma;
+  margin: 0 26px 0 14px;
+}
+.service-pdf-box-02 {
+  margin-top: 0;
+}
+.service-pdf-box-03 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 17px;
+  margin-top: 55px;
+  img {
+    width: 100%;
+  }
+}
+.service-pdf-text {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.7px;
+  margin-top: 20px;
+}
+.service-contact-text {
+  width: 100%;
+  text-align: center;
+  background-color: $color-bg-sakuma;
+  margin-top: 97px;
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.7px;
+    padding: 12px;
+  }
+}
+
+@include media(bp767) {
+  .service-fv {
+    height: auto;
+  }
+  .service-ct {
+    .how-ct-nav {
+      padding-bottom: 300px;
+    }
+    .how-ct-nav-box {
+      grid-template-columns: 1fr;
+      max-width: 168px;
+      margin-bottom: 56px;
+    }
+    .service-pdf-box {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .pdf-border-y {
+      display: none;
+    }
+    .pdf-text {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 11px;
+      line-height: 18px; /* 163.636% */
+      letter-spacing: 0.55px;
+    }
+    .service-pdf-box-03 {
+      margin: 30px 24px 0;
+      column-gap: 8.7px;
+    }
+    .service-pdf-text {
+      font-size: 11px;
+      line-height: 18px; /* 163.636% */
+      letter-spacing: 0.55px;
+    }
+    .service-contact-text {
+      p {
+        font-size: 11px;
+        line-height: 18px; /* 163.636% */
+        letter-spacing: 0.55px;
+      }
+    }
+  }
+}

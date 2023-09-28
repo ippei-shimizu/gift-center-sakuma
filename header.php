@@ -26,7 +26,7 @@
             <a href="<?php echo esc_url(home_url('/how-to-give')); ?>">ギフトの選び方・贈り方</a>
           </il>
           <il class="header-list">
-            <a href="">オリジナルサービス</a>
+            <a href="<?php echo esc_url(home_url('/service')); ?>">オリジナルサービス</a>
           </il>
           <il class="header-list">
             <a href="">ABOUT</a>
