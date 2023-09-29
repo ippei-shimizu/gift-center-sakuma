@@ -1,0 +1,173 @@
+@use "../setting/index" as *;
+
+.single {
+  padding-top: 120px;
+  padding-bottom: 370px;
+}
+.single-contents {
+  max-width: 1044px;
+  margin: 39px auto 0;
+  width: 90%;
+}
+.single-cat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  column-gap: 38px;
+  p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+  span {
+    display: block;
+    p {
+      font-family: $family-noto-serif-jp;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 1.4px;
+    }
+  }
+}
+.single-border {
+  height: 5px;
+  background-color: $color-bg-sakuma;
+}
+.single-post-title {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-family: $family-noto-serif-jp;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.single-post-date {
+  font-family: $family-noto-serif-jp;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.single-post-contents {
+  max-width: 750px;
+  width: 84%;
+  margin: 96px auto 112px;
+  line-height: 1.6em;
+  p,
+  span,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  th,
+  td,
+  dd,
+  dt,
+  strong,
+  li {
+    font-family: $family-noto-serif-jp;
+    margin-bottom: 89px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 16px;
+    word-break: break-all;
+  }
+  img {
+    height: auto;
+    display: block;
+  }
+}
+.single-prev-link {
+  margin: 78px auto 0;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  display: block;
+  width: fit-content;
+}
+
+@include media(bp767) {
+  .single {
+    padding-bottom: 150px;
+    padding-top: 80px;
+  }
+  .single-contents {
+    width: 100%;
+    margin-top: 85px;
+  }
+  .single-cat {
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-bottom: 16px;
+    column-gap: 26px;
+    p {
+      font-size: 16px;
+      letter-spacing: 1.6px;
+    }
+    span {
+      p {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .single-post-title {
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
+  .single-prev-link {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    margin-top: 60px;
+  }
+  .single-post-date {
+    margin-left: 42px;
+    margin-right: 42px;
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    margin-top: 9px;
+  }
+  .single-post-contents {
+    width: auto;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 85px;
+    margin-bottom: 60px;
+    p,
+    span,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    th,
+    td,
+    dd,
+    dt,
+    strong,
+    li {
+      font-size: 11px;
+      letter-spacing: 1.1px;
+      line-height: 1.6em;
+      margin-bottom: 60px;
+      margin-top: 18px;
+    }
+  }
+}
