@@ -30,64 +30,60 @@
         </div>
         <div class="nav-border"></div>
         <div class="nav-contents-box nav-contents-box-01">
-          <p class="nav-list-title">ギフトの選び方・贈り方</p>
+          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/how-to-give')); ?>">ギフトの選び方・贈り方</a></p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">結婚</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#wedding')); ?>">結婚</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">出産</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#delivery')); ?>">出産</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">快気・お見舞い</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#sympathy')); ?>">快気・お見舞い</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">入進学・就職・長寿</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#employment')); ?>">入進学・就職・長寿</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">新築・引越し</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#moving')); ?>">新築・引越し</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">仏事・法要</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#buddhist')); ?>">仏事・法要</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">御中元・御歳暮</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#gift')); ?>">御中元・御歳暮</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">イベント景品</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#event')); ?>">イベント景品</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/how-to-give')); ?>/">カタログギフト</a>
+            <a href="<?php echo esc_url(home_url('/how-to-give/#catalog')); ?>">カタログギフト</a>
           </p>
         </div>
         <div class="nav-border"></div>
         <div class="nav-contents-box">
-          <p class="nav-list-title">オリジナルサービス</p>
+          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/service')); ?>">オリジナルサービス</a></p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">カタログギフト</a>
+            <a href="<?php echo esc_url(home_url('/service/#ceremony')); ?>">仏事</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">地元ギフト</a>
-          </p>
-          </p>
-          <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">仏事</a>
+            <a href="<?php echo esc_url(home_url('/service/#summer')); ?>">御中元・御歳暮</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">御中元・御歳暮</a>
+            <a href="<?php echo esc_url(home_url('/service/#original-set')); ?>">オリジナルセット</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">配送</a>
+            <a href="<?php echo esc_url(home_url('/service/#delivery')); ?>">配送</a>
           </p>
-          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/')); ?>/">ABOUT</a></p>
-          <p class="nav-list-title">TOPIX</p>
+          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a></p>
+          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/topix')); ?>">TOPIX</a></p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">おしらせ</a>
-          </p>
-          <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">Q&A</a>
+            <a href="<?php echo esc_url(home_url('/category/information')); ?>">おしらせ</a>
           </p>
           <p class="nav-list-link">
-            <a href="<?php echo esc_url(home_url('/')); ?>/">PICK UP</a>
+            <a href="<?php echo esc_url(home_url('/category/faq')); ?>">Q&A</a>
+          </p>
+          <p class="nav-list-link">
+            <a href="<?php echo esc_url(home_url('/category/pickup')); ?>">PICK UP</a>
           </p>
         </div>
         <p class="copy">&copy;giftcenter Sakuma</p>

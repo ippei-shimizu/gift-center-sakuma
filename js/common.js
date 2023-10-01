@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
-
   let fadeUpTextHowElements = document.querySelectorAll(".fadeUpText-how");
 
   // 各要素に対してアニメーションを設定
@@ -190,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   animationBorderCompanyElements.forEach((element) => {
     const targetWidth = window.innerWidth <= 767 ? "172%" : "112%";
-  
+
     gsap.fromTo(
       element,
       {
@@ -209,7 +208,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
   });
-  
 
   let fadeInImgElements = document.querySelectorAll(".fadeInImg");
 
@@ -375,6 +373,67 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top 80%",
         once: true, // アニメーションは一度だけ発火
       },
+    });
+  });
+
+  if (window.location.hash) {
+    // フラグメント識別子を取得
+    var hash = window.location.hash;
+
+    // `/`を取り除く
+    var sanitizedHash = hash.replace("/", "");
+
+    var targetElement = document.querySelector(sanitizedHash);
+
+    if (targetElement) {
+      // 現在のスクロール位置
+      var start = window.pageYOffset;
+
+      // ターゲットの位置
+      var end = targetElement.getBoundingClientRect().top + start;
+
+      // ここでオフセットを調整。例としてヘッダーの高さが50pxだとする
+      var headerOffset = 200;
+      end = end - headerOffset;
+
+      // アニメーションの時間
+      var duration = 1000;
+
+      var startTime = performance.now();
+
+      requestAnimationFrame(function step(timestamp) {
+        var time = timestamp - startTime;
+        var progress = time / duration;
+        if (progress > 1) progress = 1;
+
+        window.scrollTo(0, start + (end - start) * progress);
+
+        if (progress < 1) requestAnimationFrame(step);
+      });
+    }
+  }
+
+  const links = document.querySelectorAll(".page-in-link");
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      window.scrollTo({
+        top: 400,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+  });
+
+  const navLinks = document.querySelectorAll(".hamburger-nav-link");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (navMenu.classList.contains("is-open")) {
+        navMenu.classList.remove("is-open");
+        overlay.classList.remove("is-open");
+        navBtn.classList.remove("openRotate");
+        navText.textContent = "MENU";
+      }
     });
   });
 });

@@ -28,13 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new Swiper(".top-category-contents", {
     slidesPerView: 4, // 1画面の表示枚数
-    slidesPerGroup: 1,
     spaceBetween: 18, // スライド同士の間隔
     speed: 600,
-    loop: true, // ループスライド
     autoplay: {
       delay: 3500, // 2.5秒ごとに自動スライド
-      disableOnInteraction: false, // ユーザーがスライドを操作した後もautoplayを続ける
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -54,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new Swiper(".sp-top-catalog-slider", {
     slidesPerView: 1,
-    loop: true,
     speed: 600,
     spaceBetween: 20,
     autoplay: {

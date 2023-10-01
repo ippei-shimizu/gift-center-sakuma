@@ -9,6 +9,11 @@
 html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  @include media(bp767) {
+    scroll-padding-top: 80px;
+  }
 }
 
 body {
@@ -280,8 +285,17 @@ img {
     z-index: 100;
   }
 }
-
+.nav-list-title-about {
+  margin-bottom: 23px;
+  margin-top: 23px;
+}
+.nav-list-link-sp {
+  display: none;
+}
 @include media(bp767) {
+  .nav-list-link-sp {
+    display: block;
+  }
   .nav-menu {
     width: 100%;
     overflow: scroll;

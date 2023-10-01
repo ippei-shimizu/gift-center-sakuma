@@ -57,7 +57,7 @@ foreach ($categories as $link => $category) :
 ?>
 <li class="how-nav-border animationBorder"></li>
 <li class="how-ct-list">
-    <a href="<?php echo esc_url(home_url($link)); ?>"><?php echo $category; ?>
+    <a class="page-in-link" href="<?php echo $link; ?>"><?php echo $category; ?>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hover-arrow.svg" width="50px" height="6px" alt="矢印">
     </a>
 </li>
@@ -65,7 +65,7 @@ foreach ($categories as $link => $category) :
 <li class="how-nav-border animationBorder"></li>
         </ul>
         <div class="how-q-a">
-          <a href="">Q & A</a>
+          <a href="<?php echo esc_url(home_url('/category/faq')); ?>">Q & A</a>
           <span>※よくある質問はこちら</span>
         </div>
         <div class="how-tel">

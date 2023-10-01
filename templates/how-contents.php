@@ -222,7 +222,7 @@
       </div>
       <!-- ! -->
     </div><!-- sympathy end -->
-    <div id="employmen" class="how-item">
+    <div id="employment" class="how-item">
       <div class="how-item-top">
         <div class="how-item-img-box">
           <img class="firstFadeUp" src="<?php echo get_template_directory_uri(); ?>/assets/images/employmen.png" width="754px" height="250px" alt="入進学・就職・長寿" loading="lazy">

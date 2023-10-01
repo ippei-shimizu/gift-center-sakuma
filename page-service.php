@@ -25,7 +25,7 @@
       <!-- nav -->
       <div class="how-ct-nav">
         <p class="how-ct-title fadeUpText"> ORIGINAL CATEGORY</p>
-        <ul class="how-ct-nav-box">
+        <ul class="how-ct-nav-service how-ct-nav-box">
         <?php
 $categories = [
     "#ceremony" => "仏 事",
@@ -38,7 +38,7 @@ foreach ($categories as $link => $category) :
 ?>
 <li class="how-nav-border animationBorder"></li>
 <li class="how-ct-list">
-    <a href="<?php echo esc_url(home_url($link)); ?>"><?php echo $category; ?>
+    <a href="<?php echo $link; ?>"><?php echo $category; ?>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hover-arrow.svg" width="50px" height="6px" alt="矢印">
     </a>
 </li>
@@ -46,7 +46,7 @@ foreach ($categories as $link => $category) :
 <li class="how-nav-border animationBorder"></li>
         </ul>
         <div class="how-q-a">
-          <a href="">Q & A</a>
+          <a href="<?php echo esc_url(home_url('/category/faq')); ?>">Q & A</a>
           <span>※よくある質問はこちら</span>
         </div>
         <div class="how-tel">
@@ -80,7 +80,7 @@ foreach ($categories as $link => $category) :
 ※クリックするとPDFが開きます
                 </p>
                 <div class="pdf-border-y fadeInImg"></div>
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf1.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf1.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf1.png" width="186px" height="258px" alt="法要案内状見本" loading="lazy">
                 </a>
               </div>
@@ -99,7 +99,7 @@ foreach ($categories as $link => $category) :
 ※クリックするとPDFが開きます
                 </p>
                 <div class="pdf-border-y fadeInImg"></div>
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf2.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf2.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf2.png" width="300px" height="142px" alt="奉書挨拶状見本（一例）" loading="lazy">
                 </a>
               </div>
@@ -112,16 +112,16 @@ foreach ($categories as $link => $category) :
               各種御礼のカード無料
               </p>
               <div class="service-pdf-box-03">
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf3.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf3.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf3.png" width="300px" height="142px" alt="各種御礼のカード無料" loading="lazy">
                 </a>
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf4.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf4.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf4.png" width="300px" height="142px" alt="各種御礼のカード無料" loading="lazy">
                 </a>
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf5.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf5.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf5.png" width="300px" height="142px" alt="各種御礼のカード無料" loading="lazy">
                 </a>
-                <a href="<?php echo esc_url(home_url("/assets/images/pdf6.pdf")); ?>" class="pdf-link" target="_blank">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf6.pdf" class="pdf-link" target="_blank">
                   <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf6.png" width="300px" height="142px" alt="各種御礼のカード無料" loading="lazy">
                 </a>
               </div>

@@ -3,11 +3,15 @@
 .how-fv {
   height: calc(100vh - 28px);
   width: 100%;
-  padding-top: 120px;
+  margin-top: 120px;
   margin-bottom: 325px;
+  min-height: 1020px;
+  max-height: 1107px;
+  position: relative;
 }
 .how-fv-inner {
-  position: relative;
+  max-width: 1684px;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
 }
@@ -25,7 +29,7 @@
   position: relative;
   z-index: 3;
   margin-left: 134px;
-  margin-top: 38vh;
+  margin-top: 294px;
   h1 {
     font-family: $family-noto-serif-jp;
     font-size: 40px;
@@ -44,12 +48,9 @@
   letter-spacing: 1.4px;
 }
 .how-fv-item-wrap {
-  position: absolute;
-  left: 20%;
-  bottom: -50%;
-  @include media(bp1245) {
-    left: 10%;
-  }
+  margin: 56px 8% 0 auto;
+  position: relative;
+  max-width: 1012px;
 }
 .how-fv-item {
   position: relative;
@@ -71,12 +72,8 @@
     max-width: 540px;
     min-width: 540px;
     width: 80%;
-    top: 32px;
-    left: 67%;
+    margin: 36px 0 0 auto;
     transition: background-color 0.3s ease-in-out;
-    @include media(bp1100) {
-      left: 32%;
-    }
     &.animationSquareBg {
       background-color: $color-bg-sakuma;
     }
@@ -118,7 +115,7 @@
     width: 640px;
     height: 254px;
     left: 14%;
-    top: 18%;
+    top: 16%;
     @include media(bp1100) {
       left: 2%;
     }
@@ -126,7 +123,7 @@
   &-02 {
     width: 547px;
     height: 266px;
-    left: 55%;
+    right: 94px;
     top: 36%;
     @include media(bp1100) {
       left: 22%;
@@ -138,15 +135,13 @@
   top: 0;
   left: 0;
   z-index: 0;
+  width: 100%;
+  height: 100%;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-}
-
-.how-ct {
-  padding: 523px 0 0;
 }
 .how-ct-inner {
   width: 84%;
@@ -169,7 +164,8 @@
   position: sticky;
   top: 156px;
   left: 0;
-  height: fit-content;
+  height: calc(100vh - 224px);
+  overflow-y: scroll;
   padding-bottom: 140px;
 }
 .how-ct-title {
@@ -183,6 +179,12 @@
 }
 .how-ct-nav-box {
   margin-bottom: 83px;
+  @include media(bp767) {
+    height: auto;
+  }
+}
+.how-ct-nav-service {
+  height: auto;
 }
 .how-nav-border {
   height: 1px;
@@ -518,7 +520,6 @@
     margin-left: 40px;
   }
   .how-fv-item-wrap {
-    left: 0;
     width: 100%;
   }
   .how-fv-item-btm {
@@ -526,15 +527,13 @@
     margin-left: auto;
     margin-right: 0;
   }
-  .how-ct {
-    padding-top: 212px;
-  }
   .how-ct-grid {
     grid-template-columns: 1fr;
   }
   .how-ct-nav {
     position: initial;
     padding-bottom: 159px;
+    height: auto;
   }
   .how-tel {
     display: none;
@@ -548,6 +547,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 8px;
     row-gap: 12px;
+    height: auto;
   }
   .how-nav-border {
     display: none;
@@ -575,8 +575,11 @@
 }
 @include media(bp767) {
   .how-fv {
-    padding-top: 80px;
-    margin-bottom: 0;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    min-height: 776px;
+    max-height: initial;
+    height: 100%;
   }
   .how-fv-item-wrap {
     position: relative;
@@ -611,7 +614,7 @@
   }
   .how-fv-title {
     margin-left: 42px;
-    margin-top: 24vh;
+    margin-top: 207px;
     h1 {
       font-size: 17px;
       line-height: 28px; /* 164.706% */
@@ -644,7 +647,7 @@
   .how-fv-item-btm {
     width: 84%;
     padding: 20px 40px 35px 50px;
-    top: 40px;
+    margin-top: 45px;
   }
   .how-fv-square-01 {
     width: 89%;
@@ -658,9 +661,6 @@
     right: 32px;
     top: 187px;
     height: 186px;
-  }
-  .how-ct {
-    padding-top: 112px;
   }
   .how-ct-title {
     font-size: 14px;
@@ -906,11 +906,13 @@
 @include media(bp767) {
   .service-fv {
     height: auto;
+    min-height: 320px;
+    max-height: 320px;
+  }
+  .nav-list-title-about {
+    margin-top: 0;
   }
   .service-ct {
-    .how-ct-nav {
-      padding-bottom: 300px;
-    }
     .how-ct-nav-box {
       grid-template-columns: 1fr;
       max-width: 168px;

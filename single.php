@@ -15,7 +15,7 @@
           }
           ?>
         </p>
-        <span>
+        <span class="fadeUpText">
         <?php 
         // 現在の投稿に設定されているカテゴリー名の説明を表示
         $categories = get_the_category();

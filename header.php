@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico"> -->
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
   <title>ギフトセンターサクマ | 山梨県特産のギフトなら</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css" integrity="sha512-15OzXDrYC/wTgcjNDIx6+2LiAHCPnS9DiKQj/dhgdRMpdW+W4AoSjxism+gRaDobBaFN+UONPGic1ttu5mpWxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,32 +58,35 @@
         <div class="nav-contents-box">
           <p class="nav-list-title nav-list-title-acoodion">ギフトの選び方・贈り方</p>
           <div class="nav-list-item-wrap">
-            <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">結婚</a>
+            <p class="nav-list-link-sp nav-list-link">
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give')); ?>">ギフトの選び方・贈り方</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">出産</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#wedding')); ?>">結婚</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">快気・お見舞い</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#delivery')); ?>">出産</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">入進学・就職・長寿</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#sympathy')); ?>">快気・お見舞い</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">新築・引越し</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#employment')); ?>">入進学・就職・長寿</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">仏事・法要</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#moving')); ?>">新築・引越し</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">御中元・御歳暮</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#buddhist')); ?>">仏事・法要</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">イベント景品</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#gift')); ?>">御中元・御歳暮</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">カタログギフト</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#event')); ?>">イベント景品</a>
+            </p>
+            <p class="nav-list-link">
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/how-to-give/#catalog')); ?>">カタログギフト</a>
             </p>
           </div>
         </div>
@@ -91,34 +94,33 @@
         <div class="nav-contents-box">
           <p class="nav-list-title nav-list-title-acoodion">オリジナルサービス</p>
           <div class="nav-list-item-wrap">
-            <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">カタログギフト</a>
+            <p class="nav-list-link-sp nav-list-link">
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/service')); ?>">オリジナルサービス</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">地元ギフト</a>
-            </p>
-            </p>
-            <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">仏事</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/service/#ceremony')); ?>">仏事</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">御中元・御歳暮</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/service/#summer')); ?>">御中元・御歳暮</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">配送</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/service/#original-set')); ?>">オリジナルセット</a>
+            </p>
+            <p class="nav-list-link">
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/service/#delivery')); ?>">配送</a>
             </p>
           </div>
-            <p class="nav-list-title nav-list-title-about"><a href="<?php echo esc_url(home_url('/')); ?>/">ABOUT</a></p>
+            <p class="nav-list-title-about nav-list-title nav-list-title-about"><a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a></p>
             <p class="nav-list-title nav-list-title-acoodion">TOPIX</p>
           <div class="nav-list-item-wrap">
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">おしらせ</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/category/information')); ?>">おしらせ</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">Q&A</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/category/faq')); ?>">Q&A</a>
             </p>
             <p class="nav-list-link">
-              <a href="<?php echo esc_url(home_url('/')); ?>/">PICK UP</a>
+              <a class="hamburger-nav-link" href="<?php echo esc_url(home_url('/category/pickup')); ?>">PICK UP</a>
             </p>
           </div>
         </div>
@@ -128,8 +130,8 @@
         <a href="tel:055-275-5178" class="nav-tel">055-275-5178</a>
       </div>
       <div class="nav-sns">
-        <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram" width="59px" height="60px" loading="lazy"></a>
-        <a href="" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook" width="59px" height="60px" loading="lazy"></a>
+        <a href="https://www.instagram.com/giftcenter_sakuma/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram" width="59px" height="60px" loading="lazy"></a>
+        <a href="https://www.facebook.com/gcsakuma" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook" width="59px" height="60px" loading="lazy"></a>
       </div>
     </div>
   </div>

@@ -96,20 +96,21 @@ if ($pickup_posts->have_posts()) : while ($pickup_posts->have_posts()) : $pickup
 ?>
 <a href="<?php the_permalink(); ?>" class="top-pick-link">
   <div class="top-pick-item">
-    <?php
-    if (has_post_thumbnail()) :
-      the_post_thumbnail('full'); 
-    endif;
-    ?>
+  <?php
+if (has_post_thumbnail()) :
+  the_post_thumbnail('full', array('class' => 'fadeInImg'));
+endif;
+?>
+
     <div class="top-pick-item-text">
       <?php if (get_field('pickup-tag')) : ?>
-      <div class="pickup-tag">
+      <div class="pickup-tag fadeUpText">
         <?php the_field('pickup-tag'); ?>
       </div>
       <?php endif; ?>
-      <h2 class="pickup-title"><?php the_title(); ?></h2>
+      <h2 class="pickup-title fadeUpText"><?php the_title(); ?></h2>
       <?php if (get_field('pickup-sub')) : ?>
-      <div class="pickup-sub">
+      <div class="pickup-sub fadeUpText">
         <?php the_field('pickup-sub'); ?>
       </div>
       <?php endif; ?>
@@ -180,24 +181,28 @@ wp_reset_postdata();
   <h2 class="section-title fadeUpText">CATEGORY</h2>
   <div class="top-category-contents">
     <div class="swiper-wrapper">
-        <?php
-        $categories = [
-            "結婚", "出産", "快気お見舞い", "入学・就職・長寿", "新築・引越し", "仏事・法要", "お中元・お歳暮", "イベント景品", "カタログ"
-        ];
-        foreach ($categories as $index => $category) :
-        ?>
-            <div class="swiper-slide">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
-                  <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/cat-0<?php echo $index + 1; ?>.png" width="307px" height="130px" alt="<?php echo $category; ?>" loading="lazy">
-                </a>
-            </div>
-        <?php endforeach; ?>
+    <?php
+$categories = [
+    "結婚", "出産", "快気お見舞い", "入学・就職・長寿", "新築・引越し", "仏事・法要", "お中元・お歳暮", "イベント景品", "カタログ"
+];
+$categories_link = [
+    "#wedding", "#delivery", "#sympathy", "#employment", "#moving", "#buddhist", "#gift", "#event", "#catalog"
+];
+
+foreach ($categories as $index => $category) :
+?>
+    <div class="swiper-slide">
+        <a href="<?php echo esc_url(home_url('/how-to-give' . $categories_link[$index])); ?>">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/cat-0<?php echo $index + 1; ?>.png" width="307px" height="130px" alt="<?php echo $category; ?>" loading="lazy">
+        </a>
+    </div>
+<?php endforeach; ?>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     </div>
     <div class="top-category-link fadeUpText">
-      <a href="<?php echo esc_url(home_url('/')); ?>">VIEW ALL CATEGORY</a>
+      <a href="<?php echo esc_url(home_url('/how-to-give')); ?>">VIEW ALL CATEGORY</a>
     </div>
   </div>
 </div>
@@ -210,7 +215,7 @@ wp_reset_postdata();
       <div class="top-what-title-box">
         <h2 class="fadeUpText">WHAT'S NEW</h2>
         <h3 class="fadeUpText">おしらせ</h3>
-        <a class="fadeUpText" href="">VIEW MORE</a>
+        <a class="fadeUpText" href="<?php echo esc_url(home_url('/category/information')); ?>">VIEW MORE</a>
       </div>
       <div class="top-what-list">
 <?php
@@ -261,10 +266,10 @@ wp_reset_postdata();
 <div class="top-sns">
   <div class="top-sns-inner">
     <div class="top-sns-facebook">
-
+    <?php echo do_shortcode('[custom-facebook-feed feed=2]'); ?>
     </div>
     <div class="top-sns-instagram">
-      
+      <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
     </div>
   </div>
 </div>
