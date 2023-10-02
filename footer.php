@@ -74,7 +74,7 @@
           <p class="nav-list-link">
             <a href="<?php echo esc_url(home_url('/service/#delivery')); ?>">配送</a>
           </p>
-          <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a></p>
+          <p class="nav-list-title-about nav-list-title"><a href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a></p>
           <p class="nav-list-title"><a href="<?php echo esc_url(home_url('/topix')); ?>">TOPIX</a></p>
           <p class="nav-list-link">
             <a href="<?php echo esc_url(home_url('/category/information')); ?>">おしらせ</a>

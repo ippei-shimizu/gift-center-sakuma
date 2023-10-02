@@ -5,7 +5,7 @@
     <p class="pan-list fadeUpText">ABOUT</p>
     <h2 class="about-title fadeUpText">ABOUT DIFT CENTER  SAKUMA</h2>
     <div class="about-fv-img">
-      <img class="fadeInImgFv" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-fv.png" width="1440px" height="642px" alt="about">
+      <img class="fadeInImgFv" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-fv-2.jpg" width="1440px" height="642px" alt="about">
     </div>
   </div>
 </div>

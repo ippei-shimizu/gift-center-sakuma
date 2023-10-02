@@ -17,7 +17,7 @@
   .swiper-pagination-bullet {
     width: 60px;
     height: 2px;
-    background: $color-bg-sakuma;
+    background: #e1ded5;
     margin: 0 30px !important;
     border-radius: 0;
     display: inline-block;
@@ -398,7 +398,7 @@
     grid-template-columns: 1fr;
     row-gap: 40px;
     .cff-visual-header .cff-header-hero img {
-      width: 100%!important;
+      width: 100% !important;
     }
   }
 }
