@@ -456,7 +456,7 @@
   <span class="sp-none">お電話いただければ ご都合に合わせて伺います。<br>
   その他お気軽にお問い合わせください。</span>
           </p>
-          <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-34.png" width="216px" height="206px" alt="フルーツ盛り合わせ" loading="lazy">
+          <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-34-2.png" width="216px" height="206px" alt="フルーツ盛り合わせ" loading="lazy">
           <span class="how-text-sp pc-none fadeUpText">お電話いただければ ご都合に合わせて伺います。<br>
   その他お気軽にお問い合わせください。</span>
         </div>
@@ -623,9 +623,6 @@
         <div class="how-item-top-border"><div class="how-item-top-border-02 thirdFadeUp"></div></div>
       </div>
       <div class="how-item-content">
-        <h3 class="how-item-content-title fadeUpText">トロフィー、楯、メダル、カップ</h3>
-        <div class="how-item-content-border animationBorder"></div>
-        <div class="how-item-content-border-short animationBorder"></div>
         <p class="how-item-content-text fadeUpText">
         </p>
         <div class="how-item-img-wrap">
@@ -633,7 +630,7 @@
             <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-51.png" width="206px" height="206px" alt="トロフィー" loading="lazy">
           </div>
           <div class="how-item-content-img">
-            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-52.png" width="206px" height="206px" alt="楯" loading="lazy">
+            <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-52-2.png" width="206px" height="206px" alt="楯" loading="lazy">
           </div>
           <div class="how-item-content-img">
             <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/how-53.png" width="206px" height="206px" alt="メダル" loading="lazy">

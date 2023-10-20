@@ -80,8 +80,8 @@ foreach ($categories as $link => $category) :
 ※クリックするとPDFが開きます
                 </p>
                 <div class="pdf-border-y fadeInImg"></div>
-                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf1.pdf" class="pdf-link" target="_blank">
-                  <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf1.png" width="186px" height="258px" alt="法要案内状見本" loading="lazy">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/10/pdf1.pdf" class="pdf-link" target="_blank">
+                  <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf1-1.jpg" width="186px" height="258px" alt="法要案内状見本" loading="lazy">
                 </a>
               </div>
             </div>
@@ -99,8 +99,8 @@ foreach ($categories as $link => $category) :
 ※クリックするとPDFが開きます
                 </p>
                 <div class="pdf-border-y fadeInImg"></div>
-                <a href="https://giftsakuma.com/wp-content/uploads/2023/09/pdf2.pdf" class="pdf-link" target="_blank">
-                  <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf2.png" width="300px" height="142px" alt="奉書挨拶状見本（一例）" loading="lazy">
+                <a href="https://giftsakuma.com/wp-content/uploads/2023/10/pdf2.pdf" class="pdf-link" target="_blank">
+                  <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdf2-2.jpg" width="300px" height="142px" alt="奉書挨拶状見本（一例）" loading="lazy">
                 </a>
               </div>
             </div>
@@ -181,6 +181,7 @@ foreach ($categories as $link => $category) :
 カタログの種類や、加えたい一品などご相談を承ります。<br>
 お電話にてお問い合わせください。<br>
               </p>
+              <img class="original-img fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/original-img.png" width="317px" height="280px" alt="オリジナルセット" loading="lazy">
             </div>
             </div>
             <!-- delivery -->

@@ -903,6 +903,12 @@
   }
 }
 
+.pdf-link {
+  img {
+    border: 0.5px solid #786552;
+  }
+}
+
 @include media(bp767) {
   .service-fv {
     height: auto;

@@ -637,7 +637,7 @@ img {
 .fv .swiper-pagination-bullet {
   width: 60px;
   height: 2px;
-  background: #D4CEBD;
+  background: #d4cebd;
   margin: 0 30px !important;
   border-radius: 0;
   display: inline-block;
@@ -1373,6 +1373,66 @@ img {
     padding-bottom: 200px;
   }
 }
+.cl-text-box {
+  margin-top: 100px;
+  text-align: center;
+}
+.cl-text-box p {
+  color: #786552;
+  text-align: center;
+  font-family: "Noto Serif JP";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 14px;
+}
+.cl-text-box a {
+  color: #786552;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 767px) {
+  .cl-text-box {
+    display: none;
+  }
+}
+
+.sp-cl-text-box {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .sp-cl-text-box {
+    display: block;
+    margin-top: 40px;
+  }
+  .sp-cl-text-box p {
+    color: #786552;
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    margin-bottom: 22px;
+  }
+  .sp-cl-text-box a {
+    color: #786552;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2.2px;
+  }
+}
+
 .how-fv {
   height: calc(100vh - 28px);
   width: 100%;
@@ -2313,6 +2373,10 @@ img {
   padding: 12px;
 }
 
+.pdf-link img {
+  border: 0.5px solid #786552;
+}
+
 @media screen and (max-width: 767px) {
   .service-fv {
     height: auto;
@@ -2574,6 +2638,17 @@ img {
     height: 250px;
   }
 }
+.original-img {
+  display: block;
+  margin: 44px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .original-img {
+    margin-top: 25px;
+    width: 70%;
+  }
+}
+
 .index {
   padding-top: 120px;
   padding-bottom: 385px;

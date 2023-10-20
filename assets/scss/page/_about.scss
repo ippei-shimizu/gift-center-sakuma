@@ -208,3 +208,11 @@
     height: 250px;
   }
 }
+.original-img {
+  display: block;
+  margin: 44px auto 0;
+  @include media(bp767) {
+    margin-top: 25px;
+    width: 70%;
+  }
+}

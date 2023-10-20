@@ -17,7 +17,7 @@
   .swiper-pagination-bullet {
     width: 60px;
     height: 2px;
-    background: #D4CEBD;
+    background: #d4cebd;
     margin: 0 30px !important;
     border-radius: 0;
     display: inline-block;
@@ -748,5 +748,60 @@
   }
   .top-sns {
     padding-bottom: 200px;
+  }
+}
+
+.cl-text-box {
+  margin-top: 100px;
+  text-align: center;
+  p {
+    color: #786552;
+    text-align: center;
+    font-family: $family-noto-serif-jp;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 14px;
+  }
+  a {
+    color: #786552;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+  @include media(bp767) {
+    display: none;
+  }
+}
+.sp-cl-text-box {
+  display: none;
+  @include media(bp767) {
+    display: block;
+    margin-top: 40px;
+    p {
+      color: #786552;
+      text-align: center;
+      font-family: $family-noto-serif-jp;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      margin-bottom: 22px;
+    }
+    a {
+      color: #786552;
+      text-align: center;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 2.2px;
+    }
   }
 }

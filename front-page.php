@@ -14,8 +14,8 @@
         </div>
         <div class="fv-img-box swiper-slide">
           <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv2-sp.png" media="(max-width:768px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv2.png" width="1044px" height="600px" alt="山梨コラボギフト" class="fv-img">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv2-2-sp.png" media="(max-width:768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv2-2.png" width="1044px" height="600px" alt="山梨コラボギフト" class="fv-img">
           </picture>
         </div>
         <div class="fv-img-box swiper-slide">
@@ -131,19 +131,19 @@ wp_reset_postdata();
     <h3 class="section-sub-title fadeUpText">ギフトセンター サクマ が取り扱っている<br class="pc-br">カタログギフト</h3>
     <div class="top-catalog-contents">
       <div class="top-catalog-item">
-        <a href="https://shaddy.jp/gs_front/app/shop/shop_introduction/search/yamanashi/nakakoma/50540-000/" target="_blank">
+        <a href="https://giftsakuma.com/shaddy/" target="_blank">
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-01.png" width="250px" height="389px" alt="shaddy" loading="lazy">
         </a>
       </div>
       <div class="top-catalog-border"></div>
       <div class="top-catalog-item">
-        <a href="https://www.harmonick.co.jp/catalog-gift/" target="_blank">
-          <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
+        <a href="https://giftsakuma.com/harmonick/" target="_blank">
+          <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02-2.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
         </a>
       </div>
       <div class="top-catalog-border"></div>
       <div class="top-catalog-item">
-        <a href="https://www.ringbell.co.jp/" target="_blank">
+        <a href="https://giftsakuma.com/ring-bell/" target="_blank">
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-03.png" width="250px" height="389px" alt="RINGBELL" loading="lazy">
         </a>
       </div>
@@ -158,7 +158,7 @@ wp_reset_postdata();
 </div>
 <div class="swiper-slide top-catalog-item">
   <a href="https://www.harmonick.co.jp/catalog-gift/" target="_blank">
-    <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
+    <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02-2.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
   </a>
 </div>
 <div class="swiper-slide top-catalog-item">
@@ -172,7 +172,18 @@ wp_reset_postdata();
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
 </div>
+
+<div class="cl-text-box fadeUpText ">
+  <p>カタログは数多くの種類を取り扱っております。<br>
+詳細はお問い合わせください。</p>
+<a href="tel:055-275-5178" class="fadeUpText ">055-275-5178</a>
+</div>
   </div>
+</div>
+<div class="sp-cl-text-box cl-text-box fadeUpText ">
+  <p>カタログは数多くの種類を取り扱っております。<br>
+詳細はお問い合わせください。</p>
+<a href="tel:055-275-5178" class="fadeUpText ">055-275-5178</a>
 </div>
 
 <!-- category -->
