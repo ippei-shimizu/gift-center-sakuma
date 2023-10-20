@@ -131,19 +131,19 @@ wp_reset_postdata();
     <h3 class="section-sub-title fadeUpText">ギフトセンター サクマ が取り扱っている<br class="pc-br">カタログギフト</h3>
     <div class="top-catalog-contents">
       <div class="top-catalog-item">
-        <a href="https://giftsakuma.com/shaddy/" target="_blank">
+        <a href="https://giftsakuma.com/shaddy/">
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-01.png" width="250px" height="389px" alt="shaddy" loading="lazy">
         </a>
       </div>
       <div class="top-catalog-border"></div>
       <div class="top-catalog-item">
-        <a href="https://giftsakuma.com/harmonick/" target="_blank">
+        <a href="https://giftsakuma.com/harmonick/">
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02-2.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
         </a>
       </div>
       <div class="top-catalog-border"></div>
       <div class="top-catalog-item">
-        <a href="https://giftsakuma.com/ring-bell/" target="_blank">
+        <a href="https://giftsakuma.com/ring-bell/">
           <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-03.png" width="250px" height="389px" alt="RINGBELL" loading="lazy">
         </a>
       </div>
