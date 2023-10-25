@@ -152,17 +152,17 @@ wp_reset_postdata();
 <div class="swiper-wrapper">
 <!-- Start Slide Items -->
 <div class="swiper-slide top-catalog-item">
-  <a href="https://shaddy.jp/gs_front/app/shop/shop_introduction/search/yamanashi/nakakoma/50540-000/" target="_blank">
+  <a href="https://giftsakuma.com/shaddy/">
     <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-01.png" width="250px" height="389px" alt="shaddy" loading="lazy">
   </a>
 </div>
 <div class="swiper-slide top-catalog-item">
-  <a href="https://www.harmonick.co.jp/catalog-gift/" target="_blank">
+  <a href="https://giftsakuma.com/harmonick/">
     <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-02-2.png" width="250px" height="389px" alt="HARMONICK" loading="lazy">
   </a>
 </div>
 <div class="swiper-slide top-catalog-item">
-  <a href="https://www.ringbell.co.jp/" target="_blank">
+  <a href="https://giftsakuma.com/ring-bell/">
     <img class="fadeInImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/catalog-03.png" width="250px" height="389px" alt="RINGBELL" loading="lazy">
   </a>
 </div>
